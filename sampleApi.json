@@ -1,0 +1,45 @@
+{
+  "status": "ok",
+  "totalResults": 3,
+  "articles": [
+    {
+      "source": {
+        "id": null,
+        "name": "Cricket.one"
+      },
+      "author": "Debashis Sarangi",
+      "title": "[Watch] Mitchell Starc Gives 'Death Stare' To Shahidi After Castling Him With A Lethal Yorker - OneCricket",
+      "description": "After blowing hot and cold, the veteran pacer bounced back in style, dismissing Afghan skipper Hashmatullah Shahidi with a searing yorker.",
+      "url": "https://cricket.one/match-hub/watch-mitchell-starc-gives-death-stare-to-shahidi-after-castling-him-with-a-lethal-yorker/654a21961e14e6b7f2426e9a",
+      "urlToImage": "https://onecricketnews.akamaized.net/parth-editor/oc-dashboard/news-images-prod/1699357071216_Untitled design - 2023-11-07T170619.923.jpg",
+      "publishedAt": "2023-11-07T11:37:58Z",
+      "content": "Mitchell Starc castled Hashmatullah Shahidi [X.com]\r\nAce Australian speedster Mitchell Starc had a forgettable start with the ball in the ongoing game against Afghanistan, as he was mostly wayward in… [+1146 chars]"
+    },
+    {
+      "source": {
+        "id": null,
+        "name": "Hindustan Times"
+      },
+      "author": "HT Sports Desk",
+      "title": "'Shakib should learn from Rohit Sharma': Ex-IND player on Mathews timed out - Hindustan Times",
+      "description": "The former India cricketer blasted Shakib, reminding him of a Rohit Sharma act from an ODI game earlier this year. | Cricket",
+      "url": "https://www.hindustantimes.com/cricket/should-learn-from-rohit-sharma-kaif-blasts-shakib-al-hasan-winning-at-all-cost-ban-vs-sl-wc-angelo-mathews-timed-out-101699350888153.html",
+      "urlToImage": "https://www.hindustantimes.com/ht-img/img/2023/11/07/1600x900/shaob_rohit_1699353275420_1699353285083.jpg",
+      "publishedAt": "2023-11-07T10:58:41Z",
+      "content": "Arguably the most heated, yet underrated rivalry in modern cricket, between Sri Lanka and Bangladesh, reached a new level on Monday evening at the Arun Jaitley Stadium in New Delhi when veteran all-r… [+2010 chars]"
+    },
+    {
+      "source": {
+        "id": null,
+        "name": "Cricketworldcup.com"
+      },
+      "author": "ICC",
+      "title": "Shakib Al Hasan ruled out of CWC23 due to a fracture - ICC Women's World Cup",
+      "description": "An injury to his left Index finger has ruled Bangladesh skipper Shakib Al Hasan out of the ICC Men's Cricket World Cup 2023.",
+      "url": "https://www.cricketworldcup.com/news/3772115",
+      "urlToImage": "https://resources.pulse.icc-cricket.com/ICC/photo/2023/11/07/1b79b0b9-1a3f-422d-a41f-180e1cb654dd/GettyImages-1767325428.jpg",
+      "publishedAt": "2023-11-07T08:48:45Z",
+      "content": "An injury to his left Index finger has ruled Bangladesh skipper Shakib Al Hasan out of the ICC Men's Cricket World Cup 2023.\r\nShakib suffered the injury while batting in Bangladesh's penultimate leag… [+1100 chars]"
+    }
+  ]
+}
