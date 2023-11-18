@@ -1,6 +1,6 @@
 // import PropTypes from 'prop-types'
 import React, { Component } from 'react'
-// import { Link } from "react-router-dom";
+import { Link } from "react-router-dom";
 
 
 export class Navbar extends Component {
@@ -10,24 +10,22 @@ export class Navbar extends Component {
         return (
             <nav className="navbar navbar-expand-lg bg-light">
                 <div className="container-fluid">
-                    <a className="navbar-brand" href="/">APInews</a>
+                    <Link className="navbar-brand" to="/">APInews</Link>
                     <button className="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="/navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
                         <span className="navbar-toggler-icon"></span>
                     </button>
                     <div className="collapse navbar-collapse" id="navbarNav">
                         <ul className="navbar-nav">
                             <li className="nav-item mx-2">
-                                <a className="nav-link active" aria-current="page" href="/">Home</a>
+                                <Link className="nav-link active" aria-current="page" to="/">Home</Link>
                             </li>
-                            <li className="nav-item mx-2"><a className="nav-link" href="/">About Page</a>
-                            </li>
-                            <li className="nav-item mx-2"><a className="nav-link" href="/">business</a></li>
-                            <li className="nav-item mx-2"><a className="nav-link" href="/">entertainment</a></li>
-                            <li className="nav-item mx-2"><a className="nav-link" href="/">general</a></li>
-                            <li className="nav-item mx-2"><a className="nav-link" href="/">health</a></li>
-                            <li className="nav-item mx-2"><a className="nav-link" href="/">science</a></li>
-                            <li className="nav-item mx-2"><a className="nav-link" href="/">sports</a></li>
-                            <li className="nav-item mx-2"><a className="nav-link" href="/">technology</a></li>
+                            {/* <li className="nav-item mx-2"><Link className="nav-link" to="/general">general</Link></li> */}
+                            <li className="nav-item mx-2"><Link className="nav-link" to="/business">business</Link></li>
+                            <li className="nav-item mx-2"><Link className="nav-link" to="/entertainment">entertainment</Link></li>
+                            <li className="nav-item mx-2"><Link className="nav-link" to="/health">health</Link></li>
+                            <li className="nav-item mx-2"><Link className="nav-link" to="/science">science</Link></li>
+                            <li className="nav-item mx-2"><Link className="nav-link" to="/sports">sports</Link></li>
+                            <li className="nav-item mx-2"><Link className="nav-link" to="/technology">technology</Link></li>
 
                         </ul>
                     </div>
