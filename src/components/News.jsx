@@ -17,14 +17,15 @@ export class News extends Component {
         category: PropTypes.string
     }
 
-    constructor() {
-        super();
+    constructor(props) {
+        super(props);
         this.state = {
             // article: sample.articles,
             page: 1,
             articles: [],
             loading: false
         }
+        document.title = `${this.capitalizeFirstLetterOfCategory()} - NewsApp`
     }
 
     async update(page) {
@@ -39,30 +40,11 @@ export class News extends Component {
         await this.update(1)
     }
 
-
     handleNextClick = async () => {
-        // let url = `https://newsapi.org/v2/top-headlines?country=${this.props.country}&category=${this.props.category}&apiKey=d150430bb4bf40c396ca36687f2676e2&page=${this.state.page + 1}&pageSize=${this.props.pageSize}`;
-        // this.setState({ loading: true })
-        // let data = await fetch(url);
-        // let parsedData = await data.json();
-        // this.setState({
-        //     page: ++this.state.page,
-        // })
-
         await this.update(this.state.page + 1)
-        // console.log("next: " + this.state.page)
     }
     handlePrevClick = async () => {
-        // let url = `https://newsapi.org/v2/top-headlines?country=${this.props.country}&category=${this.props.category}&apiKey=d150430bb4bf40c396ca36687f2676e2&page=${this.state.page - 1}&pageSize=${this.props.pageSize}`;
-        // this.setState({ loading: true })
-        // let data = await fetch(url);
-        // let parsedData = await data.json();
-        // this.setState({
-        //     page: --this.state.page,
-        // })
-
         await this.update(this.state.page - 1)
-        // console.log("prev: " + this.state.page)
     }
 
     capitalizeFirstLetterOfCategory() {
@@ -75,12 +57,13 @@ export class News extends Component {
             <>
                 <div className="container my-3">
 
+
+
+                    <h2 className='text-center my-3'>Top Headlines - {this.capitalizeFirstLetterOfCategory()}</h2>
                     <div className="container d-flex justify-content-between">
                         <button type="button" disabled={this.state.page <= 1} className="btn btn-outline-info btn-sm" onClick={this.handlePrevClick}>&larr; Previous Page</button>
                         <button type="button" disabled={this.state.page >= Math.ceil(this.state.totalResults / this.props.pageSize)} className="btn btn-outline-info btn-sm" onClick={this.handleNextClick}>&rarr; Next Page</button>
                     </div>
-
-                    <h2 className='text-center my-3'>Top Headlines - {this.capitalizeFirstLetterOfCategory()}</h2>
                     {this.state.loading && <BarLoader
                         color="#36d7b7"
                         cssOverride={{
