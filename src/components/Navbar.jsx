@@ -8,7 +8,7 @@ export class Navbar extends Component {
 
     render() {
         return (
-            <nav className="navbar navbar-expand-lg bg-light">
+            <nav className="navbar navbar-expand-lg sticky-top bg-light">
                 <div className="container-fluid">
                     <Link className="navbar-brand" to="/">APInews</Link>
                     <button className="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="/navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
@@ -20,12 +20,12 @@ export class Navbar extends Component {
                                 <Link className="nav-link active" aria-current="page" to="/">Home</Link>
                             </li>
                             {/* <li className="nav-item mx-2"><Link className="nav-link" to="/general">general</Link></li> */}
-                            <li className="nav-item mx-2"><Link className="nav-link" to="/business">business</Link></li>
-                            <li className="nav-item mx-2"><Link className="nav-link" to="/entertainment">entertainment</Link></li>
-                            <li className="nav-item mx-2"><Link className="nav-link" to="/health">health</Link></li>
-                            <li className="nav-item mx-2"><Link className="nav-link" to="/science">science</Link></li>
-                            <li className="nav-item mx-2"><Link className="nav-link" to="/sports">sports</Link></li>
-                            <li className="nav-item mx-2"><Link className="nav-link" to="/technology">technology</Link></li>
+                            <li className="nav-item mx-2"><Link className="nav-link" to="/business">Business</Link></li>
+                            <li className="nav-item mx-2"><Link className="nav-link" to="/entertainment">Entertainment</Link></li>
+                            <li className="nav-item mx-2"><Link className="nav-link" to="/health">Health</Link></li>
+                            <li className="nav-item mx-2"><Link className="nav-link" to="/science">Science</Link></li>
+                            <li className="nav-item mx-2"><Link className="nav-link" to="/sports">Sports</Link></li>
+                            <li className="nav-item mx-2"><Link className="nav-link" to="/technology">Technology</Link></li>
 
                         </ul>
                     </div>

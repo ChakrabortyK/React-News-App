@@ -22,14 +22,14 @@ export class NewsItem extends Component {
                             background: '#0d6efdc7',
                             color: 'white',
                             border: '10px',
-                            'border-radius': '10px'
+                            borderRadius: '10px'
                         }}><small >{source}</small></div>
                         <img src={imageUrl} className="card-img-top" alt="..." />
                         <div className="card-body">
                             <h5 className="card-title">{title}</h5>
                             <p className="card-text">{description}</p>
                             <p className="card-text"><small className='text-muted'>By {author} on {newDate}</small></p>
-                            <a href={url} rel="noreferrer" target="_blank" className="btn btn-sm btn-primary">Read More</a>
+                            <a href={url} rel="noreferrer" target="_blank" className="btn btn-sm btn-outline-danger">Read More</a>
                         </div>
                     </div>
                 </div>
