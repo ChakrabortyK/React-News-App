@@ -10,7 +10,7 @@ export class Navbar extends Component {
         return (
             <nav className="navbar navbar-expand-lg sticky-top bg-light">
                 <div className="container-fluid">
-                    <Link className="navbar-brand" to="/">APInews</Link>
+                    <Link className="navbar-brand" to="/">APInews-FnBased</Link>
                     <button className="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="/navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
                         <span className="navbar-toggler-icon"></span>
                     </button>
