@@ -6,6 +6,7 @@ import { Route, Routes } from "react-router-dom";
 
 export default class App extends Component {
   pageSize = 9;
+  apiKey = process.env.REACT_APP_API_KEY;
   render() {
     return (
       <>
@@ -18,6 +19,7 @@ export default class App extends Component {
               <News
                 key="General"
                 pageSize={this.pageSize}
+                apiKey={this.apiKey}
                 country={"in"}
                 category={"general"}
               />
