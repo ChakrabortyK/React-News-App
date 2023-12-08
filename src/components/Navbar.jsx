@@ -1,9 +1,12 @@
 // import PropTypes from 'prop-types'
 import React from 'react'
-import { Link } from "react-router-dom";
+import { Link, useLocation } from "react-router-dom";
+
 
 
 const Navbar = () => {
+
+    let location = useLocation();
 
     return (
         <nav className="navbar navbar-expand-lg sticky-top bg-light">
@@ -15,15 +18,15 @@ const Navbar = () => {
                 <div className="collapse navbar-collapse" id="navbarNav">
                     <ul className="navbar-nav">
                         <li className="nav-item mx-2">
-                            <Link className="nav-link active" aria-current="page" to="/">Home</Link>
+                            <Link className={`nav-link ${location.pathname === '/' ? 'active' : ''}`} aria-current="page" to="/">Home</Link>
                         </li>
                         {/* <li className="nav-item mx-2"><Link className="nav-link" to="/general">general</Link></li> */}
-                        <li className="nav-item mx-2"><Link className="nav-link" to="/business">Business</Link></li>
-                        <li className="nav-item mx-2"><Link className="nav-link" to="/entertainment">Entertainment</Link></li>
-                        <li className="nav-item mx-2"><Link className="nav-link" to="/health">Health</Link></li>
-                        <li className="nav-item mx-2"><Link className="nav-link" to="/science">Science</Link></li>
-                        <li className="nav-item mx-2"><Link className="nav-link" to="/sports">Sports</Link></li>
-                        <li className="nav-item mx-2"><Link className="nav-link" to="/technology">Technology</Link></li>
+                        <li className="nav-item mx-2"><Link className={`nav-link ${location.pathname === '/business' ? 'active' : ''}`} to="/business">Business</Link></li>
+                        <li className="nav-item mx-2"><Link className={`nav-link ${location.pathname === '/entertainment' ? 'active' : ''}`} to="/entertainment">Entertainment</Link></li>
+                        <li className="nav-item mx-2"><Link className={`nav-link ${location.pathname === '/health' ? 'active' : ''}`} to="/health">Health</Link></li>
+                        <li className="nav-item mx-2"><Link className={`nav-link ${location.pathname === '/science' ? 'active' : ''}`} to="/science">Science</Link></li>
+                        <li className="nav-item mx-2"><Link className={`nav-link ${location.pathname === '/sports' ? 'active' : ''}`} to="/sports">Sports</Link></li>
+                        <li className="nav-item mx-2"><Link className={`nav-link ${location.pathname === '/technology' ? 'active' : ''}`} to="/technology">Technology</Link></li>
 
                     </ul>
                 </div>
